@@ -1,47 +1,43 @@
-# Restaurant-Recommendation-System
-# 🍽️ Restaurant Rating Prediction
+# 🔍 Restaurant Recommendation System
 
-This project focuses on building a regression model to predict restaurant ratings based on various features such as cuisine type, price, and location.
+This project aims to suggest restaurants to users based on their preferences like cuisine type, price range, and other features using a content-based recommendation system.
 
 ## 📌 Objective
-To predict the rating of a restaurant using machine learning techniques and gain insights into the key factors influencing customer satisfaction.
+To develop a recommendation engine that provides personalized restaurant suggestions using machine learning and similarity metrics.
 
 ## 📁 Dataset
-- Contains details such as:
-  - Restaurant Name
-  - Cuisine
-  - Location
+- Includes:
+  - Restaurant Names
+  - Cuisines
   - Price Range
-  - Customer Reviews
-  - Rating (Target)
+  - Average Ratings
 
-## 🧹 Data Preprocessing
-- Handled missing values
-- Encoded categorical variables using Label Encoding / One-Hot Encoding
-- Feature scaling where necessary
+## ⚙️ Approach
+- **Content-Based Filtering** using:
+  - TF-IDF Vectorization (for cuisines)
+  - Cosine Similarity (to measure likeness between restaurants)
 
-## 🤖 Model Used
-- **Linear Regression**
-- Also tried: Random Forest Regressor (optional)
+## 👨‍🍳 User Input
+- User specifies preferred cuisine and price range
+- System returns top 5 most similar restaurants
 
-## 📊 Evaluation Metrics
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
+## 🧠 ML Concepts Used
+- Natural Language Processing (TF-IDF)
+- Vectorization & Similarity Calculation
+- Feature Filtering
 
 ## 📌 Key Takeaways
-- Cuisine and price have a strong correlation with ratings
-- Proper feature engineering significantly boosts prediction accuracy
+- Users receive meaningful recommendations
+- Model adapts well to different combinations of user preferences
 
 ## 🛠️ Technologies
 - Python
 - Pandas, NumPy
-- Scikit-learn
-- Matplotlib & Seaborn (for visualization)
+- Scikit-learn (TF-IDF, Cosine Similarity)
+- Streamlit (optional for UI)
 
-## 📈 Output
-- Model trained and tested
-- Performance metrics plotted
-- Predictions compared against actual values
+## 🎯 Output
+- List of top 5 recommended restaurants
+- Console or optional frontend view
 
 ---
